@@ -25,6 +25,6 @@ def F(x):
 num_points=100
 X = np.linspace(0,100,100)
 
-plt.rcParams["figure.figsize"] = (8,6) # set fig size for matplotlib
+fig, ax = plt.rcParams["figure.figsize"] = (8,6) # set fig size for matplotlib
 plt.plot(X,np.vectorize(F)(X));
-st.pyplot()
+st.pyplot(fig)
