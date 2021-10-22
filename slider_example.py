@@ -25,5 +25,6 @@ def F(x):
 num_points=100
 X = np.linspace(0,100,100)
 
-fig = plt.plot(X,np.vectorize(F)(X))
+fig, ax = plt.subplots() 
+plt.plot(X,np.vectorize(F)(X))
 st.pyplot(fig)
