@@ -22,7 +22,6 @@ E = 0.619
 def F(x):
     return(D * sin(C * atan(B*x - E*(B*x - atan(B*x)))))
   
-num_points=100
 X = np.linspace(0,100,100)
 
 fig, ax = plt.subplots() 
